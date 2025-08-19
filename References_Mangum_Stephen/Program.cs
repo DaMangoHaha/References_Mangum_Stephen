@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // Main method serves as the entry point for the program, demonstrating the functionality of the Sedan and Truck classes.
         {
             Sedan myFirstSedan = new Sedan(0);
             IAutomobile myAutomobile = myFirstSedan;

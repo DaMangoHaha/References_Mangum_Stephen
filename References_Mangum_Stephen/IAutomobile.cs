@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace References_Mangum_Stephen
 {
-    internal interface IAutomobile
+    internal interface IAutomobile // The IAutomobile interface defines the properties and methods that any automobile class must implement.
     {
 
 
-        public double Speed { get; }
+        public double Speed { get; } // Speed of the automobile
 
-        public int Wheels {  get; }
-         
-        public string LicensePlate { get; }
+        public int Wheels {  get; } // Number of wheels on the automobile
 
-        public void Stringify();
+        public string LicensePlate { get; } // License plate number of the automobile
+
+        public void Stringify(); // Method to output the automobile's details in a formatted string.
     }
 }
