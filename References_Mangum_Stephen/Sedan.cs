@@ -4,19 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace References_Mangum_Stephen // Continue video at 4:22
+namespace References_Mangum_Stephen
 {
     internal class Sedan : IAutomobile
     {
-        public double Speed => throw new NotImplementedException();
+        public double Speed { get; private set; }
 
-        public int Wheels => throw new NotImplementedException();
+        public int Wheels { get; private set; }
 
-        public string LicensePlate => throw new NotImplementedException();
+        public string LicensePlate { get; private set; }
+
+        public Sedan(double speed)
+        {
+            Wheels = 4;
+            Speed = speed;
+            LicensePlate = "GCTC-06";
+        }
 
         public void Stringify()
         {
-            throw new NotImplementedException();
+    Console.WriteLine($"The Sedan is traveling at a speed of {Speed} on {Wheels} wheels with a License Plate # of {LicensePlate}.");
         }
+        public void IncreaseSpeed()
+{
+    Speed += 5;
+}
+
+public void DecreaseSpeed()
+{
+    Speed -= 5;
+}
     }
 }

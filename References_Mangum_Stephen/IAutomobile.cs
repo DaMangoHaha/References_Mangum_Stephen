@@ -8,5 +8,14 @@ namespace References_Mangum_Stephen
 {
     internal interface IAutomobile
     {
+
+
+        public double Speed { get; }
+
+        public int Wheels {  get; }
+         
+        public string LicensePlate { get; }
+
+        public void Stringify();
     }
 }
